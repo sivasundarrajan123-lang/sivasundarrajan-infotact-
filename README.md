@@ -2,16 +2,8 @@
 
 AST Powered Time-Travel Debugger
 
-## Team Members
-- Siva Sundar Rajan I
-- Sivaraman.P
-
-
-## Technologies
-- Python
-- AST
-- sys.settrace
-- SQLite
+## Team
+- Siva Sundar Rajan (Team Lead)
 
 ## Status
-🚧 Week 1 - In Progress
+Week 1 - Project Setup
