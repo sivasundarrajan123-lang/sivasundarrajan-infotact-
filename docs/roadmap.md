@@ -14,6 +14,4 @@
 
 ## Phase 4
 - SQLite integration
-- Report generationgit add .
-git commit -m "Add project roadmap documentation"
-git push origin main
+- Report generation
