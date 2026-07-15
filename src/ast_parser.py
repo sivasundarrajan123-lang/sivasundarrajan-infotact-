@@ -9,4 +9,13 @@ print(z)
 
 tree = ast.parse(code)
 
-print(ast.dump(tree, indent=4))
+print("Variables Found:")
+
+variables = set()
+
+for node in ast.walk(tree):
+    if isinstance(node, ast.Name):
+        variables.add(node.id)
+
+for variable in sorted(variables):
+    print(variable)
