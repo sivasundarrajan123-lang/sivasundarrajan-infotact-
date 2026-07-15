@@ -9,7 +9,9 @@ print(z)
 
 tree = ast.parse(code)
 
-print("Variables Found:")
+print("=" * 30)
+print("Variables Found")
+print("=" * 30)
 
 variables = set()
 
