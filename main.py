@@ -3,6 +3,8 @@ from src.ast_parser import parse_python_code
 from src.variable_extractor import extract_variables
 from src.function_extractor import extract_functions
 from src.class_extractor import extract_classes
+from src.import_extractor import extract_imports
+from src.loop_extractor import extract_loops
 
 # Read Python source file
 code = read_python_file("tests/sample.py")
@@ -47,3 +49,24 @@ if classes:
         print(cls)
 else:
     print("No classes found.")
+
+    print("\n" + "=" * 30)
+print("Imports Found")
+print("=" * 30)
+
+imports = extract_imports(tree)
+
+if imports:
+    for module in imports:
+        print(module)
+else:
+    print("No imports found.")
+
+    print("\n" + "=" * 30)
+print("Loops Found")
+print("=" * 30)
+
+loops = extract_loops(tree)
+
+print(f"For Loops   : {loops['for']}")
+print(f"While Loops : {loops['while']}")
