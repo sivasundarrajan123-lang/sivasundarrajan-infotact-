@@ -2,6 +2,7 @@ from src.file_reader import read_python_file
 from src.ast_parser import parse_python_code
 from src.variable_extractor import extract_variables
 from src.function_extractor import extract_functions
+from src.class_extractor import extract_classes
 
 # Read Python source file
 code = read_python_file("tests/sample.py")
@@ -34,3 +35,15 @@ if functions:
         print(function)
 else:
     print("No functions found.")
+
+    print("\n" + "=" * 30)
+print("Classes Found")
+print("=" * 30)
+
+classes = extract_classes(tree)
+
+if classes:
+    for cls in classes:
+        print(cls)
+else:
+    print("No classes found.")
