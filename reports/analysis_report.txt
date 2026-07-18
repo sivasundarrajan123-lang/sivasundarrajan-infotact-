@@ -3,31 +3,31 @@
            PyChronicle Analysis Report
 ==================================================
 
-Analysis Time : 18-07-2026 10:11:52
+Analysis Time : 18-07-2026 10:14:30
 File Name     : sample.py
 
 SUMMARY
 --------------------------------------------------
-Variables        : 4
-Functions        : 2
+Variables        : 3
+Functions        : 3
 Classes          : 1
 Imports          : 2
 For Loops        : 1
-While Loops      : 0
-If Statements    : 0
+While Loops      : 1
+If Statements    : 1
 Function Calls   : 4
 
 VARIABLES
 --------------------------------------------------
 • age
 • i
-• math
 • name
 
 FUNCTIONS
 --------------------------------------------------
 • __init__
 • greet
+• study
 
 CLASSES
 --------------------------------------------------
