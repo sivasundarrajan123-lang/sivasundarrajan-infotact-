@@ -5,6 +5,9 @@ from src.function_extractor import extract_functions
 from src.class_extractor import extract_classes
 from src.import_extractor import extract_imports
 from src.loop_extractor import extract_loops
+from src.condition_extractor import extract_conditions
+from src.call_extractor import extract_function_calls
+from src.report_generator import generate_report
 
 # Read Python source file
 code = read_python_file("tests/sample.py")
@@ -70,3 +73,46 @@ loops = extract_loops(tree)
 
 print(f"For Loops   : {loops['for']}")
 print(f"While Loops : {loops['while']}")
+
+print("\n" + "=" * 30)
+print("Conditions Found")
+print("=" * 30)
+
+conditions = extract_conditions(tree)
+print(f"If Statements : {conditions}")
+
+print("\n" + "=" * 30)
+print("Function Calls")
+print("=" * 30)
+
+calls = extract_function_calls(tree)
+
+if calls:
+    for call in calls:
+        print(call)
+else:
+    print("No function calls found.")   
+
+    print("\n" + "=" * 30)
+print("Function Calls")
+print("=" * 30)
+
+calls = extract_function_calls(tree)
+
+if calls:
+    for call in calls:
+        print(call)
+else:
+    print("No function calls found.")
+
+# Generate Analysis Report
+generate_report(
+    "sample.py",
+    variables,
+    functions,
+    classes,
+    imports,
+    loops,
+    conditions,
+    calls
+)

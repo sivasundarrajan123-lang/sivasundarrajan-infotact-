@@ -1,5 +1,5 @@
-import os
 import math
+import os
 
 name = "Siva"
 age = 22
@@ -14,8 +14,4 @@ def greet():
 for i in range(3):
     greet()
 
-while age < 25:
-    age += 1
-
-if age >= 18:
-    greet()
+print(math.sqrt(25))
