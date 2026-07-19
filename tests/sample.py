@@ -16,6 +16,11 @@ class Student:
 def greet():
     print("Hello, Welcome to PyChronicle!")
 
+def calculate():
+    return 100
+
+def display():
+    print("Display")
 
 for i in range(3):
     greet()

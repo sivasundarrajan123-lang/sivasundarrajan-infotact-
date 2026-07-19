@@ -3,13 +3,13 @@
            PyChronicle Analysis Report
 ==================================================
 
-Analysis Time : 18-07-2026 10:14:30
+Analysis Time : 19-07-2026 09:58:03
 File Name     : sample.py
 
 SUMMARY
 --------------------------------------------------
 Variables        : 3
-Functions        : 3
+Functions        : 5
 Classes          : 1
 Imports          : 2
 For Loops        : 1
@@ -26,6 +26,8 @@ VARIABLES
 FUNCTIONS
 --------------------------------------------------
 • __init__
+• calculate
+• display
 • greet
 • study
 
